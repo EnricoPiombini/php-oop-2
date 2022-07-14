@@ -5,7 +5,7 @@ class Utente
     public $nome;
     public $cognome;
     public $mail;
-    protected $password;
+    public $password;
 
     public function setPassword($_password)
     {
