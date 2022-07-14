@@ -5,3 +5,11 @@ I prodotti saranno oltre al cibo, anche giochi, cucce, etc.
 L’utente potrà sia comprare i prodotti senza registrarsi,
  oppure iscriversi e ricevere il 20% di sconto su tutti i prodotti.
 Il pagamento avviene con la carta di credito, che non deve essere scaduta. -->
+
+<?php
+
+require_once __DIR__ ."/classi/prodotti/prodotto.php";
+require_once __DIR__  ."/classi/prodotti/cibo.php";
+require_once __DIR__ ."/classi/prodotti/giochi.php";
+require_once __DIR__ ."/classi/utenti/utente.php";
+require_once __DIR__ ."/classi/utenti/scontoutente.php";
