@@ -30,5 +30,8 @@ $giocattolo = new Giochi("Barbie", "Bambola di plastica", "Giocattolo per bambin
 $giocattolo->setLimitage(5, "");
 var_dump($giocattolo);
 
+$cibo = new Cibo( "Pasta", "Pasta Asciutta", "Confezionati alimentari", "2$/kg");
+$cibo -> setArguments("10/12","Dispensa");
+var_dump($cibo);
 
 
