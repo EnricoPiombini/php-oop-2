@@ -13,3 +13,7 @@ require_once __DIR__  ."/classi/prodotti/cibo.php";
 require_once __DIR__ ."/classi/prodotti/giochi.php";
 require_once __DIR__ ."/classi/utenti/utente.php";
 require_once __DIR__ ."/classi/utenti/scontoutente.php";
+
+$utente1 = new Utente("Enrico", "Piombini", "piombini.enrico@gmail.com");
+$utente1->setPassword('300192');
+var_dump($utente1);

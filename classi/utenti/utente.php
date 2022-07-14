@@ -1,18 +1,22 @@
 <?php
 
-class Utente {
+class Utente
+{
     public $nome;
     public $cognome;
     public $mail;
-    public $password;
+    protected $password;
 
-public function __construct($_nome, $_cognome, $_mail, $_eta)
-{
+    public function setPassword($_password)
+    {
+        $this->password =($_password);
+
+    }
+
+    public function __construct($_nome, $_cognome, $_mail)
+    {
         $this->nome = $_nome;
         $this->cognome = $_cognome;
         $this->mail = $_mail;
-        $this->eta = $_eta;
-    
-}
-
+    }
 }
