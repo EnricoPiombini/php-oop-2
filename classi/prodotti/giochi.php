@@ -1,14 +1,20 @@
 <?php
 
-class Giochi extends Prodotto {
-    protected $materiale;
-    protected $etaMinima;
-
-public function __construct($_materiale, $_utilizzo)
+class Giochi extends Prodotto
 {
-    $this ->materiale = $_materiale;
-    $this -> utilizzo = $_utilizzo;
-}
+    protected $materiale;
+    protected $etaMinima = 0;
 
+    public function setLimitage($_etaMinima, $_materiale)
+    {
 
+        $this->materiale = $_materiale;
+        $this->etaMinima = $_etaMinima;
+
+        if ($_etaMinima < 3) {
+            $this->materiale = "Plastica";
+        } else {
+            $this->materiale = "Tutti quelli disponibili";
+        }
+    }
 }

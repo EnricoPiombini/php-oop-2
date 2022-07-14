@@ -14,13 +14,21 @@ require_once __DIR__ . "/classi/prodotti/giochi.php";
 require_once __DIR__ . "/classi/utenti/utente.php";
 require_once __DIR__ . "/classi/utenti/scontoutente.php";
 
-$utente1 = new Utente("Enrico", "Piombini", "piombini.enrico@gmail.com");
-$utente1->setPassword(300192);
-var_dump($utente1);
+$utente = new Utente("Enrico", "Piombini", "piombini.enrico@gmail.com");
+$utente->setPassword("300192A");
+var_dump($utente);
 
 $utentesconto = new ScontoUtente("Mario", "Rossi", "mario.rossi@gmail.com");
-$utentesconto->setSconto(0, 70);
-$utentesconto ->setPassword(908980);
+$utentesconto->setSconto(0, 50);
+$utentesconto ->setPassword("W908980");
 var_dump($utentesconto);
+
+$prodotto1 = new Prodotto ("Pc", "PersonalComputer", "Tech", "1200$");
+var_dump($prodotto1);
+
+$giocattolo = new Giochi("Barbie", "Bambola di plastica", "Giocattolo per bambini", "12$");
+$giocattolo->setLimitage(5, "");
+var_dump($giocattolo);
+
 
 
